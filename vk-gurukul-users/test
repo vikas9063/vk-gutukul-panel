@@ -1,0 +1,15 @@
+Spring Boot & Spring Cloud: Config Server, Eureka, Gateway, OpenFeign, Circuit Breaker (Resilience4j), Sleuth, Zipkin, etc.
+
+Microservice Design: DDD, Bounded Contexts, Event-Driven Architecture, CQRS, and Saga patterns.
+
+Persistence & Messaging: JPA, Redis, Kafka, RabbitMQ, PostgreSQL, MongoDB.
+
+Security: Spring Security, OAuth2, JWT, Keycloak integration.
+
+CI/CD & DevOps: Docker, Kubernetes, Helm, GitHub Actions, Jenkins, ArgoCD.
+
+Observability: Prometheus, Grafana, ELK stack, distributed tracing, log correlation.
+
+Testing & Quality: Unit, Integration, Contract (Pact), Testcontainers, WireMock.
+
+Cloud-native deployment: AWS, GCP, Azure, Terraform, service discovery, load balancing.
