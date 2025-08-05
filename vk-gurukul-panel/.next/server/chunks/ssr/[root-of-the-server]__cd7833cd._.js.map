@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Administrator/Documents/vk-gurukul-panel/src/app/secured/page.tsx"],"sourcesContent":["import React from 'react'\n\nconst Secured = () => {\n  return (\n    <div>Secured</div>\n  )\n}\n\nexport default Secured"],"names":[],"mappings":";;;;;AAEA,MAAM,UAAU;IACd,qBACE,8OAAC;kBAAI;;;;;;AAET;uCAEe","debugId":null}}]
-}

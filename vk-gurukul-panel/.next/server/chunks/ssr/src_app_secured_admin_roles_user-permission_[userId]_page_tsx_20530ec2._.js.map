@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 5, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Administrator/Documents/vk-gurukul-panel/src/app/secured/admin/roles/user-permission/%5BuserId%5D/page.tsx"],"sourcesContent":["\"use client\"\r\n\r\nimport { User } from \"@/interface/types\";\r\nimport { useState } from \"react\";\r\n\r\ntype PageProps = {\r\n  params: {\r\n    userId: string;\r\n  };\r\n};\r\n\r\nexport default function Page({ params}: PageProps) {\r\n  const [selectedUser,setSelectedUser] = useState<User>({} as User);\r\n  \r\n\r\n  return <div>User ID: {params.userId}</div>;\r\n}\r\n"],"names":[],"mappings":";;;;AAGA;AAHA;;;AAWe,SAAS,KAAK,EAAE,MAAM,EAAY;IAC/C,MAAM,CAAC,cAAa,gBAAgB,GAAG,CAAA,GAAA,qMAAA,CAAA,WAAQ,AAAD,EAAQ,CAAC;IAGvD,qBAAO,8OAAC;;YAAI;YAAU,OAAO,MAAM;;;;;;;AACrC","debugId":null}}]
-}

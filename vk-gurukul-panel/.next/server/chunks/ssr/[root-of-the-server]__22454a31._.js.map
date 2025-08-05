@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Administrator/Documents/vk-gurukul-panel/src/app/secured/application/dashboard/page.tsx"],"sourcesContent":["import React from 'react'\r\n\r\nconst dashboard = () => {\r\n  return (\r\n    <div>dashboard</div>\r\n  )\r\n}\r\n\r\nexport default dashboard"],"names":[],"mappings":";;;;;AAEA,MAAM,YAAY;IAChB,qBACE,8OAAC;kBAAI;;;;;;AAET;uCAEe","debugId":null}}]
-}

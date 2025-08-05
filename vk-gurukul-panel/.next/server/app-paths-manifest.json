@@ -1,9 +1,0 @@
-{
-  "/_not-found/page": "app/_not-found/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/secured/academics/batch/page": "app/secured/academics/batch/page.js",
-  "/secured/admin/roles/page": "app/secured/admin/roles/page.js",
-  "/secured/admin/roles/user-permission/[userId]/page": "app/secured/admin/roles/user-permission/[userId]/page.js",
-  "/secured/admin/users/page": "app/secured/admin/users/page.js",
-  "/secured/application/dashboard/page": "app/secured/application/dashboard/page.js"
-}

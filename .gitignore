@@ -2,7 +2,8 @@
 
 # dependencies
 /vk-gurukul-panel/node_modules
-vk-gurukul-panel/.pnp
+/vk-gurukul-panel/.pnp
+/vk-gurukul-panel/.next
 .pnp.*
 .yarn/*
 !.yarn/patches
