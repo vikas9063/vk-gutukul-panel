@@ -1,0 +1,70 @@
+undraw
+manypixels.co
+iradesign
+
+
+import CryptoJS from "crypto-js";
+
+const SECRET_KEY = CryptoJS.enc.Utf8.parse("1234567890123456"); // 16-byte key for AES-128
+const IV = CryptoJS.enc.Utf8.parse("1234567890123456");         // 16-byte IV
+
+// Encrypt
+const encrypt = (data) => {
+  const encrypted = CryptoJS.AES.encrypt(data, SECRET_KEY, {
+    iv: IV,
+    mode: CryptoJS.mode.CBC,
+    padding: CryptoJS.pad.Pkcs7
+  });
+  return encrypted.toString(); // Base64 encoded
+};
+
+// Decrypt
+const decrypt = (cipherText) => {
+  const decrypted = CryptoJS.AES.decrypt(cipherText, SECRET_KEY, {
+    iv: IV,
+    mode: CryptoJS.mode.CBC,
+    padding: CryptoJS.pad.Pkcs7
+  });
+  return decrypted.toString(CryptoJS.enc.Utf8);
+};
+
+// Usage
+const encrypted = encrypt("Hello World");
+console.log("Encrypted:", encrypted);
+console.log("Decrypted:", decrypt(encrypted));
+
+
+import javax.crypto.Cipher;
+import javax.crypto.spec.IvParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
+import java.util.Base64;
+
+public class AESExample {
+    private static final String KEY = "1234567890123456"; // same 16-byte key
+    private static final String IV = "1234567890123456";  // same 16-byte IV
+
+    public static String encrypt(String data) throws Exception {
+        Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
+        SecretKeySpec keySpec = new SecretKeySpec(KEY.getBytes("UTF-8"), "AES");
+        IvParameterSpec ivSpec = new IvParameterSpec(IV.getBytes("UTF-8"));
+        cipher.init(Cipher.ENCRYPT_MODE, keySpec, ivSpec);
+        byte[] encrypted = cipher.doFinal(data.getBytes("UTF-8"));
+        return Base64.getEncoder().encodeToString(encrypted);
+    }
+
+    public static String decrypt(String cipherText) throws Exception {
+        Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5Padding");
+        SecretKeySpec keySpec = new SecretKeySpec(KEY.getBytes("UTF-8"), "AES");
+        IvParameterSpec ivSpec = new IvParameterSpec(IV.getBytes("UTF-8"));
+        cipher.init(Cipher.DECRYPT_MODE, keySpec, ivSpec);
+        byte[] decodedBytes = Base64.getDecoder().decode(cipherText);
+        byte[] decrypted = cipher.doFinal(decodedBytes);
+        return new String(decrypted, "UTF-8");
+    }
+
+    public static void main(String[] args) throws Exception {
+        String encrypted = encrypt("Hello World");
+        System.out.println("Encrypted: " + encrypted);
+        System.out.println("Decrypted: " + decrypt(encrypted));
+    }
+}

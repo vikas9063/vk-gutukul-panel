@@ -1,0 +1,3 @@
+{
+  "/secured/admin/roles/user-permission/[userId]/page": "app/secured/admin/roles/user-permission/[userId]/page.js"
+}
